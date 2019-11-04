@@ -14,7 +14,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    // cocoa touch system 내부에서
+    // param을 UIStoryboard type 인자값을 받는 액션 메소드를 수집한다.
+    @IBAction func unwindToVC(_ segue: UIStoryboardSegue){
+            print("unWindTapped!")
+    }
 
 }
 
